@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="bulls and cows.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COWS & BULLS</title>
+</head>
+<script src="bulls and cows.js"></script>
+<body>
+    
+    <div class="container">
+    <h1 id="heading"> BULLS AND COWS</h1>
+    <table class = user_space>
+        <tr>
+            <td> DEFAULT WORD: </td>
+            <td> <input class="Guess" type="password" id="target_word"></td> 
+        </tr>
+        <tr>
+            <td> GUESS:</td>
+            <td> <input  class="Guess" type="text" id="guess_word"></td>
+        </tr>
+    </table>
+    <br>
+    <button class="Guess" id="button" onclick="assignWords()"> Guess </button>
+    <br>
+<br><br>
+    <table>
+        <div id="display"> </div>
+    </table>
+</div>
+    
+    
+</body>
+</html>

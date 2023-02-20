@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(123, 143, 161);
+}
+
+#display{
+    background-color: rgb(250, 214, 165);
+    height: 400px;
+    width: 460px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 20px;
+    padding: 3%;
+    border: 4px solid rgb(163, 145, 117);
+}
+
+#heading{
+    text-align: center;
+    color: rgb(207, 185, 151);
+}
+
+.user_space{
+    border: 2px dashed black;
+    margin: 20px;
+    padding: 4%;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(152, 169, 184);
+
+}
+
+.Guess{
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 100px;
+
+}
+#button{
+    margin-left: 220px;
+    background-color: rgb(207, 185, 151);
+}
+.container{
+    /* background-color: rgb(207, 185, 151); */
+    width: 500px;
+    margin: auto;
+}
+
+button:hover{
+    background-color: rgb(207, 185, 151);
+}
