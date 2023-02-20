@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  #sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    margin: -50px 0 0 -50px;
+  }
+  
+  #mercury {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: -10px 0 0 -10px;
+    animation: mercury-orbit 4s linear infinite;
+  }
+  
+  #venus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: brown;
+    margin: -15px 0 0 -15px;
+    animation: venus-orbit 8s linear infinite;
+  }
+  
+  #earth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: -20px 0 0 -20px;
+    animation: earth-orbit 12s linear infinite;
+  }
+  
+  #mars {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(253, 42, 42);
+    margin: -15px 0 0 -15px;
+    animation: mars-orbit 16s linear infinite;
+  }
+  
+  #jupiter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(186, 117, 67);
+    margin: -40px 0 0 -40px;
+    animation: jupiter-orbit 20s linear infinite;
+  }
+  
+  #saturn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(248, 248, 190);
+    margin: -35px 0 0 -35px;
+    animation: saturn-orbit 24s linear infinite;
+  }
+  
+  #uranus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(181, 181, 230);
+    border-radius: 50%;
+    animation: uranus-orbit 28s linear infinite;
+  }
+
+  
+  @keyframes mercury-orbit {
+    0% {
+      transform: rotate(0) translate(100px) rotate(0);
+    }
+    100% {
+      transform: rotate(360deg) translate(100px) rotate(-360deg);
+    }
+  }
+  @keyframes venus-orbit {
+    0% {
+      transform: rotate(0) translate(130px) rotate(0);
+    }
+    100% {
+      transform: rotate(360deg) translate(130px) rotate(-360deg);
+    }
+  }
+  @keyframes earth-orbit {
+    0% {
+      transform: rotate(0) translate(160px) rotate(0);
+    }
+    100% {
+      transform: rotate(360deg) translate(160px) rotate(-360deg);
+    }
+  }
+  @keyframes mars-orbit {
+    0% {
+      transform: rotate(0) translate(200px) rotate(0);
+    }
+    100% {
+      transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
+  }
+  @keyframes jupiter-orbit {
+    0% {
+      transform: rotate(0) translate(250px) rotate(0);
+    }
+    100% {
+      transform: rotate(360deg) translate(250px) rotate(-360deg);
+    }
+  }
+  @keyframes saturn-orbit {
+    0% {
+      transform: rotate(0) translate(350px) rotate(0);
+    }
+    100% {
+      transform: rotate(360deg) translate(350px) rotate(-360deg);
+    }
+  }
+  @keyframes uranus-orbit {
+    0% {
+      transform: rotate(0) translate(400px) rotate(0);
+    }
+    100% {
+      transform: rotate(360deg) translate(400px) rotate(-360deg);
+    }
+  }
