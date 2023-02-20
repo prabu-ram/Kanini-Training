@@ -1,0 +1,77 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(251, 244, 227);
+
+}
+
+.header
+{
+    padding: 2px;
+    text-align: center;
+    border: 2px black dashed;
+    color: darkgreen;
+    background-color: blanchedalmond;
+    
+}
+
+.header h1
+{
+    /* border: 2px black solid; */
+    padding: 0.5%%;
+
+}
+
+.container{
+
+    height: 125px;
+    width: 25%;
+    padding-left: 37%;
+}
+.login
+{
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
+    padding: 2%;
+    border: 1px black solid;
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(246, 239, 221);
+    /* height: 100px;
+    width: 25%; */
+    
+}
+
+.text
+{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    color: darkgreen;
+}
+
+.buttons
+{
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(116, 195, 154);
+}
+.buttons1
+{
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(195, 148, 116);
+}
+.corner-style{
+    border-radius: 8px;
+}
+
+.valid{
+    border: rgb(79, 200, 79) 2px solid;
+    color: green;
+}
+.invalid{
+    border: rgb(250, 89, 89) 4px solid;
+    color: red;
+}

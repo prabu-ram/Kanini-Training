@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="login.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <h1> Dubakkur Bank </h1>
+    </div>
+    <script>
+            
+    </script>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+    <div class="login">
+        <!-- <h2> Login</h2> -->
+        <label > Username:  </label>
+        <input id="username" class="corner-style" type="text" 
+               onblur="validateUsername()"
+               placeholder="*"> 
+        <span id="errUN"> </span>
+        <br> <br>
+        <label > Password:  </label>
+        <input id="password" class="corner-style" type="password"> 
+        <br> <br>
+        <input class="buttons" onclick="login()" type="button" value="Login"> 
+        <input class="buttons1" type="button" value="Cancel"> 
+        <script>
+            function validateUsername(){
+                // alert("check username")
+                var entered_username = document.getElementById("username");
+                if (entered_username.value == ''){
+                    // entered_username.style.borderColor = 'Red'
+                    entered_username.classList.add("invalid")
+                    entered_username.classList.remove("valid")
+                    document.getElementById("errUN").innerHTML="username cannot be empty"
+                    entered_username.focus()
+                    
+                }
+                else{
+                    // entered_username.style.borderColor = 'black'
+                    entered_username.classList.add("valid")
+                    document.getElementById("errUN").innerHTML="*"
+                }
+            }
+
+            function login(){
+                // alert("hello!")
+                var USERNAME = "ramu";
+                var PASSWORD = "1234";
+                var entered_username = document.getElementById("username").value;
+                var entered_pwd = document.getElementById("password").value;
+                // alert(entered_username + " " + entered_pwd)
+            //     if (entered_username == USERNAME) {
+            //         if (entered_pwd == PASSWORD){
+            //             alert("WELCOME")
+            //         }
+            //         else{
+            //             alert("PASSWORD Wrong")
+            //         }
+            //     }
+            //     else{
+            //         alert("INVALID Username")
+            //     }
+            // }
+                
+                if  (entered_username ==USERNAME && entered_pwd==PASSWORD){
+                    alert("WELCOME")
+                }
+                else{
+                    alert("Invalid password or username")
+                }
+            }
+
+        </script>
+    </div>
+</div>
+
+
+    <div class="text">
+        <p> This is the login page of dubbakkur bank.</p>
+    </div>
+    
+</body>
+</html>

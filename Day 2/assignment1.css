@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+
+body
+{
+    background-color: rgb(219, 223, 227);
+}
+
+.logo{
+    position: absolute;
+    height: 100px;
+
+
+}
+.company-name{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left:240px;
+    text-align: center;
+    height: 225px;
+    width:100%
+}
+.company-name h1{
+    font-size: 50px;
+    padding: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav{
+    color: black;
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    background-color: rgb(149, 147, 147);
+    font-size: larger;
+    padding: 2%;
+}
+.iframe{
+    position: relative;
+    top: 300px
+}
+
+.block {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-color: lightgray;
+    border: 2px black dashed;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .block img {
+   width: 200px;
+   height: 200px;
+  }
+  
+  .button{
+    border-radius: 10px;
+    font-size: larger;
+    background-color: rgb(252, 235, 215);
+  }
