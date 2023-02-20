@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            outline: 2px solid red;
+        }    
+    </style>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#txtName1, #txtDuration1, #txtRating1").blur(function(){
+                if(!$(this).val()){
+                    $(this).addClass("error");
+                } else{
+                    $(this).removeClass("error");
+                }
+            });
+        });
+    </script>
+
+</head>
+<body style="background-color: rgb(237, 234, 246) ;">
+    <!-- <table>
+        <tr>
+            <td> Movie Name</td>
+            <td> <input type="text" id="txtName"></td>
+        </tr>
+        <tr>
+            <td> Duration </td>
+            <td> <input type="number" id="txtDuration"></td>
+        </tr>
+        <tr>
+            <td> Rating (1 to 5) </td>
+            <td> <input type="number" id="txtRating"></td>
+        </tr>
+    </table>
+    <button onclick="assignMovieData()"> Register </button>
+    <button onclick="showMovieData()"> Show </button> -->
+<br> <br><br><br>
+    <table>
+        <div id="display" style="border: 2px black dashed ; background-color: rgb(217, 235, 251); height: 100px; width: 200px; font-size: 20px;"> </div>
+    </table>
+<br> <br>
+
+<!-- <br><br>
+Adding a name and displaying
+<br><br>
+Name
+<input type="text" id="name">
+<br><br>
+<button onclick="insert()"> Insert </button>
+<button onclick="show()"> Show </button>
+<br> <br>
+<br> <br> -->
+Creating array of objects <br><br>
+<table>
+    <tr>
+        <td> Movie Name</td>
+        <td> <input type="text" id="txtName1"></td>
+    </tr>
+    <tr>
+        <td> Duration </td>
+        <td> <input type="number" id="txtDuration1"></td>
+    </tr>
+    <tr>
+        <td> Rating (1 to 5) </td>
+        <td> <input type="number" id="txtRating1"></td>
+    </tr>
+</table>
+<button onclick="addMovieData()"> Register </button>
+<button onclick="showMovies()"> Show </button>
+<!-- <button id="registerBtn"> Register </button>
+<button id="showBtn"> Show </button> -->
+<br> <br><br><br>
+
+
+</body>
+</body>
+</html>
