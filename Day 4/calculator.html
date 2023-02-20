@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+
+    <script>
+        result1 = '', disp_num = 0
+        function clearResult(){
+            result1=''
+            disp_num=0
+            display(disp_num)
+        }
+        function addToResult(value){
+            result1 = result1 + '' + value
+            console.log(result)
+            display(result1)
+            
+        }
+        function calculate(){
+            disp_num = eval(result1)
+            console.log(disp_num)
+            display(disp_num)
+        }
+        function display(num){
+            document.getElementById("result").value=num;
+        }
+
+    </script>
+  </head>
+  <body>
+    <h1 id="heading"> Calculator </h1>
+    <div class="calculator">
+      <input type="text" id="result">
+      <button onclick="clearResult()">C</button>
+      <button onclick="addToResult('/')">/</button>
+      <button onclick="addToResult('*')">*</button>
+      <button onclick="addToResult('-')">-</button>
+      <button onclick="addToResult(7)">7</button>
+      <button onclick="addToResult(8)">8</button>
+      <button onclick="addToResult(9)">9</button>
+      <button onclick="addToResult('+')">+</button>
+      <button onclick="addToResult(4)">4</button>
+      <button onclick="addToResult(5)">5</button>
+      <button onclick="addToResult(6)">6</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="addToResult(1)">1</button>
+      <button onclick="addToResult(2)">2</button>
+      <button onclick="addToResult(3)">3</button>
+    </div>
+  </body>
+</html>
